@@ -98,20 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
             darkModeToggle.addEventListener('click', updateHeroMode);
         }
         
-        // Add button hover effects
-        const buttons = heroSection.querySelectorAll('.hero-buttons .btn');
-        buttons.forEach(btn => {
-            btn.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px)';
-                this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
-                this.style.transition = 'all 0.3s ease';
-            });
-            
-            btn.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-            });
-        });
     }
     
     // Enhanced Hero Section UI Effects

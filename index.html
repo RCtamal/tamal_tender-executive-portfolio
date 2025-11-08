@@ -145,7 +145,7 @@
 								data-aos-delay="500">
 								<a
 									href="https://drive.google.com/file/d/1LFUO8IM8bKxwxL_xNTuMs-P1xKGInFEI/view?usp=drive_link"
-									class="btn btn-light btn-lg"
+									class="btn btn-light btn-lg btn-hover-effect"
 									target="_blank"
 									><i class="fas fa-download me-2"></i
 									>Download CV</a
@@ -254,7 +254,7 @@
 
 							<a
 								href="https://drive.google.com/file/d/1LFUO8IM8bKxwxL_xNTuMs-P1xKGInFEI/view?usp=drive_link"
-								class="btn btn-primary"
+								class="btn btn-primary btn-hover-effect"
 								target="_blank"
 								><i class="fas fa-download"></i> Download CV</a
 							>
@@ -1270,23 +1270,6 @@
 						if (shape) {
 							shape.style.animation = `float ${durations[index]}s ease-in-out infinite`;
 						}
-					});
-
-					// Add button hover effects
-					const buttons =
-						heroSection.querySelectorAll(".hero-buttons .btn");
-					buttons.forEach((btn) => {
-						btn.addEventListener("mouseenter", function () {
-							this.style.transform = "translateY(-5px)";
-							this.style.boxShadow =
-								"0 10px 20px rgba(0, 0, 0, 0.2)";
-							this.style.transition = "all 0.3s ease";
-						});
-
-						btn.addEventListener("mouseleave", function () {
-							this.style.transform = "translateY(0)";
-							this.style.boxShadow = "none";
-						});
 					});
 
 					// Update hero section based on theme
